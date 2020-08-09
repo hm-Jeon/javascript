@@ -3,6 +3,7 @@
   <head>
     <title>WEB2 - JavaScript</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -15,13 +16,8 @@
       </ol>
       <div id="article">
         <h2>JavaScript</h2>
-        <input type="button" value="day" onclick="
-          document.querySelector('body').style.backgroundColor='white';
-          document.querySelector('body').style.color='black';
-        ">
-        <input type="button" value="night" onclick="
-          document.querySelector('body').style.backgroundColor='black';
-          document.querySelector('body').style.color='white';
+        <input class="toggle" type="button" value="나이트 모드" onclick="
+          nightDayHandler(this);
         ">
         <p>
           JavaScript, often abbreviated as JS, is a programming language that conforms to the <a href="https://en.wikipedia.org/wiki/ECMAScript" title="ECMAScript Specification" target="_blank">ECMAScript specification.</a>JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
@@ -32,5 +28,9 @@
         </p>
       </div>
     </div>
+    <input class="toggle" type="button" value="나이트 모드" onclick="
+      nightDayHandler(this);
+    ">
+    <script src="script.js"></script>
   </body>
 </html>

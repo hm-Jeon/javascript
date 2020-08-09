@@ -3,6 +3,7 @@
   <head>
     <title>WEB2 - CSS</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -15,8 +16,9 @@
       </ol>
       <div id="article">
         <h2>CSS</h2>
-        <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black';">
-        <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black'; document.querySelector('body').style.color='white';">
+        <input class="toggle" type="button" value="나이트 모드" onclick="
+          nightDayHandler(this);
+        ">
         <p>
           Cascading Style Sheets (CSS) is a <strong>style sheet language used for describing the presentation of a document written in a markup language like <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" title="HTML5 Specification" target="_blank">HTML</a></strong> CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
         </p>
@@ -26,5 +28,9 @@
         </p>
       </div>
     </div>
+    <input class="toggle" type="button" value="나이트 모드" onclick="
+      nightDayHandler(this);
+    ">
+    <script src="script.js"></script>
   </body>
 </html>

@@ -3,6 +3,7 @@
   <head>
     <title>WEB1 - Welcome</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -15,8 +16,9 @@
       </ol>
       <div id="article">
         <h2>WEB</h2>
-        <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black';">
-        <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black'; document.querySelector('body').style.color='white';">
+        <input class="toggle" type="button" value="나이트 모드" onclick="
+          nightDayHandler(this);
+        ">
         <p>
           Welcome to World Wide Web!
         </p>
@@ -32,5 +34,9 @@
         </ul>
       </div>
     </div>
+    <input class="toggle" type="button" value="나이트 모드" onclick="
+      nightDayHandler(this);
+    ">
+    <script src="script.js"></script>
   </body>
 </html>
